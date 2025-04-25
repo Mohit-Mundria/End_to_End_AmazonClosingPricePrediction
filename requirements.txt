@@ -1,7 +1,8 @@
 Flask
 pandas
 numpy
-sklearn
+scikitlearn
 Tensorflow
 matplotlib
 joblib
+gunicorn
