@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon Stock Predictor</title>
+</head>
+<body>
+    <h1>Amazon Stock Price Prediction</h1>
+    <form method="POST" action="/predict">
+        <label>Open:</label><input type="text" name="open" required><br><br>
+        <label>High:</label><input type="text" name="high" required><br><br>
+        <label>Low:</label><input type="text" name="low" required><br><br>
+        <label>Volume:</label><input type="text" name="volume" required><br><br>
+        <label>Day:</label><input type="text" name="day" required><br><br>
+        <label>Month:</label><input type="text" name="month" required><br><br>
+        <label>Year:</label><input type="text" name="year" required><br><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>
