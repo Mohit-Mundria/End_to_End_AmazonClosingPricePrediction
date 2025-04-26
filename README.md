@@ -27,13 +27,30 @@ Make code for a web application in the home.html.
 1. git add .
 2. git commit -m "msg"
 3. git push -u origin main
-# Download Heroku Software
-  Download and make account on the Heroku.
-  Heroku is a cloud based software that is used by developers to deploy, build and manage apps.
-  1. Login to Heroku.
-  2. Create new Account.
-  3. Connect account of github.
-  4. Connect repository which you want.
-# Now add Procfile 
-  web:gunicorn app:app
+# Now add Rrocfile
+web:gunicorn app:app
 As we know Procfile is used to give command to Heroku from our system only.
+# Render Software
+  Create account on the Render.
+  Render is a cloud based software that is used by developers to deploy, build and manage apps.
+  1. Login to Render.
+  2. Click on Web Services.
+  3. Fill the required Details.
+  4. Connect to repository of your github account.
+  5. click on Next.
+  Congratulation! you deploy your web app on Render.
+  # Dockerise our Code
+  Create a Dockerfile
+  Commands:
+  FROM: This will create a base image on which our code run, on the system.
+  COPY: This is used to copy all the files we created till now and dockerize them.
+  WORKDIR: Here we provide our working directory.
+  RUN: This is used to download all the dependencies from: requirements.txt
+  EXPOSE: This is used as a point where we access our app from the Docker Container.
+  CMD
+  # Add Commit and Push
+  Congretulation! you made a web application and Dockerise it and Deploy it on the cloud.
+
+
+  As this is my first end to end Machine Learning Project, if any issue is there in the code please let me know.
+  
